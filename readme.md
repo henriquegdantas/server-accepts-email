@@ -31,6 +31,7 @@ console.log(await serverAcceptsEmail('linus@gp5uzpn2q7.se'))
 - `options` (object, optional)
   - `senderDomain` (string, optional) - Domain to identify as (in `HELO` smtp command)
   - `senderAddress` (string, optional) - Email address to identify as (in `MAIL FROM` command)
+  - `smtpPort` (number, optional) - SMTP port to connect to on destination server. Default is 25 but some ISPs block this port so now we have the option to use others (like 587, 465...)
 
 ## Other libraries
 
